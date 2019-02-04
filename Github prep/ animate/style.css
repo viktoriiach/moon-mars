@@ -1,0 +1,56 @@
+* {
+
+}
+
+body {
+background-color: #1c3663;
+}
+svg{
+    width:auto;
+    height:auto;
+}
+.container{
+    display:block;
+}
+
+.moon{
+    margin: 11em 0 0 37em;
+    animation-name:moon;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay:-4s;
+    transform-origin: 20% 20%;
+}
+@keyframes moon {
+    from {
+        transform: rotate(0deg)
+        translate(-150px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(-150px)
+        rotate(-360deg);
+    }
+}
+.mars{
+    margin: -50em 0 0 40em ;
+    animation-name:mars;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay:-4s;
+    transform-origin: 20% 20%;
+}
+@keyframes mars {
+    from {
+        transform: rotate(0deg)
+        translate(40px)
+        rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+        translate(40px)
+        rotate(-360deg);
+    }
+}
+
